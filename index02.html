@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Infinite Runner</title>
+
+    <link rel="manifest" href='data:application/manifest+json;charset=utf-8,{"name":"Infinite Runner","short_name":"Runner","start_url":".","display":"standalone","orientation":"portrait","background_color":"#87CEEB","theme_color":"#87CEEB"}'>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#87CEEB">
+    
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="orientation" content="portrait">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh; /* 화면 높이를 꽉 채움 (vh 단위 사용) */
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        iframe {
+            width: 100vw;  /* 화면 너비를 꽉 채움 */
+            height: 100vh; /* 화면 높이를 꽉 채움 */
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://infinite-runner-great.vercel.app" allow="fullscreen"></iframe>
+</body>
+</html>
